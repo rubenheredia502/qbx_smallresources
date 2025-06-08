@@ -1,31 +1,79 @@
 {
-    "teleports": [
-        [
-            {
-                "_name": "Elevator @ labs",
-                "coords": [3540.74, 3675.59, 20.99, 167.5],
-                "allowVehicle": false,
-                "drawText": "[E] Take Elevator Up",
-                "ignoreGround": true
-            },
-            {
-                "coords": [3540.74, 3675.59, 28.11, 172.5],
-                "allowVehicle": false,
-                "drawText": "[E] Take Elevator Down"
-            }
-        ],
-        [
-            {
-                "_name": "Coke Processing Enter/Exit",
-                "coords": [909.49, -1589.22, 30.51, 91.74],
-                "allowVehicle": false,
-                "drawText": "[E] Enter Coke Processing"
-            },
-            {
-                "coords": [1088.81, -3187.57, -38.99, 181.2],
-                "allowVehicle": false,
-                "drawText": "[E] Leave"
-            }
-        ]
+  "teleports": [
+    [
+      {
+        "_name": "Elevator @ labs",
+        "coords": [3540.74, 3675.59, 20.99, 167.5],
+        "allowVehicle": false,
+        "drawText": "[E] Take Elevator Up",
+        "ignoreGround": true,
+        "blip": false,
+        "progressBar": {
+          "label": "Usando el elevador...",
+          "duration": 3000
+        }
+      },
+      {
+        "coords": [3540.74, 3675.59, 28.11, 172.5],
+        "allowVehicle": false,
+        "drawText": "[E] Take Elevator Down",
+        "blip": false,
+        "progressBar": {
+          "label": "Bajando por el elevador...",
+          "duration": 3000
+        }
+      }
+    ],
+    [
+      {
+        "_name": "Coke Processing Enter/Exit",
+        "coords": [909.49, -1589.22, 30.51, 91.74],
+        "allowVehicle": false,
+        "drawText": "[E] Enter Coke Processing",
+        "blip": false,
+        "progressBar": {
+          "label": "Entrando al laboratorio...",
+          "duration": 4000
+        }
+      },
+      {
+        "coords": [1088.81, -3187.57, -38.99, 181.2],
+        "allowVehicle": false,
+        "drawText": "[E] Leave",
+        "blip": false,
+        "progressBar": {
+          "label": "Saliendo...",
+          "duration": 4000
+        }
+      }
+    ],
+    [
+      {
+        "_name": "Proceso de marihuana",
+        "coords": [2221.92, 5614.68, 54.20, 112.67],
+        "allowVehicle": false,
+        "drawText": "[E] Entrar en el proceso de marihuana",
+        "blip": true,
+        "blipSprite": 915,
+        "blipColor": 4,
+        "blipName": "Entrada desconocida",
+        "markerType": 1,
+        "progressBar": {
+          "label": "Entrando en zona de cultivo...",
+          "duration": 3500
+        }
+      },
+      {
+        "coords": [1066.06, -3183.43, -39.86, 84.26],
+        "allowVehicle": false,
+        "drawText": "[E] Salir del proceso de marihuana",
+        "blip": false,
+        "markerType": 1,
+        "progressBar": {
+          "label": "Saliendo de la zona...",
+          "duration": 3500
+        }
+      }
     ]
+  ]
 }
